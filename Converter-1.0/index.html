@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="css/design.css" />
+</head>
+<body>
+    <p id='title'>CONVERTER</p>
+    
+    <div id="box1">
+        <p id='output'></p>
+        <p id='input_caption'>INPUT TEXT OR NUMBERS</p>
+        <form id='form' name="convert" action="" method="POST">
+        <input type = "text" name = "user_input" id="input_text">
+        <input id="button" type="submit" name="submit" value="CONVERT">
+        </form>  
+    </div>
+
+    <div id='container_usd'>
+        <p id='converted_caption'>Dollar Value:</p>
+        <p id='converted'></p>
+    </div>
+    <table class="sql_table">
+        <thead>	
+        <tr>
+            <th>USER INPUT</th>
+            <th>USER OUTPUT</th>
+        </tr>
+        </thead>
+        <tbody id="history">
+        </tbody>
+    </table>
+    <script type="text/javascript" src="script/ajax.js"></script>
+    <script>show_history();</script>
+</body>
+</html>
