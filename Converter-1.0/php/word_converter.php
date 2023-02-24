@@ -59,7 +59,8 @@ class words_converter {
   
       //if the output is invalid
       if($final_output=='INVALID INPUT'){
-          echo json_encode($final_output);
+          $data = ["final_output" => ($final_output),"usd" => ""];
+          echo json_encode($data);
       }
       //add
       else {
