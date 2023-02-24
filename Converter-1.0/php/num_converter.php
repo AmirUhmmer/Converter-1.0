@@ -14,7 +14,10 @@ class num_converter {
         $user_input = $pending_number = $this->user_input;
 
         if($user_input>999999999999 || $user_input<0){
-            echo json_encode($final_output='Invalid Input');
+            $final_output='Invalid Input';
+
+            $data = ["final_output" => ($final_output),"usd" => ""];
+            echo json_encode($data);
         }
         else{
             $ones_arr = array("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", 
